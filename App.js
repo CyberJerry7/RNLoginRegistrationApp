@@ -68,6 +68,7 @@ const RegistrationPage =()=>{
         placeholder="Age"
         value = {age}
         onChangeText = {setAge}
+        keyboardType="phone-pad"
       />
 
       <TextInput
@@ -89,6 +90,7 @@ const RegistrationPage =()=>{
         placeholder="Zip code/Postal code"
         value = {postalCode}
         onChangeText = {setPostalCode}
+        keyboardType="phone-pad"
       />
 
       <TextInput
@@ -96,6 +98,7 @@ const RegistrationPage =()=>{
         placeholder="Phone Number"
         value = {phone}
         onChangeText = {setPhone}
+        keyboardType="phone-pad"
       />
 
       <TextInput
@@ -110,6 +113,7 @@ const RegistrationPage =()=>{
         placeholder="Password"
         value = {password}
         onChangeText = {setPassword}
+        secureTextEntry
       />
 
       <TextInput
@@ -117,6 +121,7 @@ const RegistrationPage =()=>{
         placeholder="Confirm Password"
         value = {confirmPassword}
         onChangeText = {setConfirmPasswrd}
+        secureTextEntry
       />
 
       <Text style={{marginBottom:12}}></Text>
@@ -142,9 +147,7 @@ const style = StyleSheet.create({
     borderWidth:0.5,
     borderColor:"grey",
     borderRadius:12
-
   }
-
 });
 
 export default RegistrationPage;
